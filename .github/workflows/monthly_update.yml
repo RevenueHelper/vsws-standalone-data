@@ -1,0 +1,32 @@
+name: Monthly Staff Data Update
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Runs at 00:00 on the 1st of every month
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install dependencies
+        run: pip install requests
+        
+      - name: Run Monthly Generator
+        run: python scripts/update_staff_db.py
+        env:
+            API_KEY: "36491518b58b42cfbffa854fde92f134"
+        
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Vsws-Sync-Bot"
+          git config --global user.email "bot@github.com"
+          git add data/districts/*.json
+          git commit -m "Monthly Staff Database Refresh: $(date +'%Y-%B')" || exit 0
+          git push

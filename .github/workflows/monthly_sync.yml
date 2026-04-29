@@ -1,0 +1,36 @@
+name: Monthly Staff Data Sync
+
+on:
+  schedule:
+    # Run at 00:00 on the 1st day of every month
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+    # Allows manual triggering from the GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: pip install requests
+
+    - name: Run Portal Sync Script
+      run: python scripts/sync_portal.py
+      # Note: This script runs for ~4.5 hours to update 15,000 records safely.
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add data/districts/*.json
+        git commit -m "Automated Monthly Staff Update [$(date +'%Y-%m-%d')]" || echo "No changes to commit"
+        git push
