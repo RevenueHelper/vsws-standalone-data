@@ -33,5 +33,6 @@
       { "title": "HRMS Portal Login", "url": "https://gramawardsachivalayam.ap.gov.in/GSWSLMS/Login", "type": "OPEN" },
       { "title": "NIDHI Portal", "url": "https://nidhi.apcfss.in/", "type": "OPEN" }
     ],
+    "internal": []
   }
 ]
