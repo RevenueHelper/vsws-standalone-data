@@ -11,6 +11,8 @@
     ],
     "internal": [
       { "title": "📞 Government Helplines", "activity": "com.revenueapp.VswsHelplinesActivity" }
+       { "title": "📋 Scheme Eligibility Check", "activity": "com.revenueapp.VswsSchemeActivity" },
+      { "title": "🏠 Household Mapping Check", "activity": "com.revenueapp.VswsHouseholdActivity" }
     ]
   },
   {
@@ -31,9 +33,5 @@
       { "title": "HRMS Portal Login", "url": "https://gramawardsachivalayam.ap.gov.in/GSWSLMS/Login", "type": "OPEN" },
       { "title": "NIDHI Portal", "url": "https://nidhi.apcfss.in/", "type": "OPEN" }
     ],
-    "internal": [
-      { "title": "📋 Scheme Eligibility Check", "activity": "com.revenueapp.VswsSchemeActivity" },
-      { "title": "🏠 Household Mapping Check", "activity": "com.revenueapp.VswsHouseholdActivity" }
-    ]
   }
 ]
