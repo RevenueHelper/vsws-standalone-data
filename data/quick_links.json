@@ -3,10 +3,6 @@
     "section": "Citizen Services",
     "links": [
       { "title": "Rice Card Details (AePOS)", "url": "https://aepos.ap.gov.in/SRC_Trans_Int", "type": "TRACK" },
-      { "title": "NBM Check Eligibility", "url": "https://gsws-nbm.ap.gov.in/NBM/Home/Main", "type": "TRACK" },
-      { "title": "Electricity Bill: Southern (SPDCL)", "url": "https://www.apspdcl.in/OnlineBillQuery.do", "type": "TRACK" },
-      { "title": "Electricity Bill: Eastern (EPDCL)", "url": "https://www.apepdcl.com/view-pay-bill", "type": "TRACK" },
-      { "title": "Electricity Bill: Central (CPDCL)", "url": "https://www.apcpdcl.in/ViewPayBill", "type": "TRACK" },
       { "title": "Free Sand Booking", "url": "https://sand.ap.gov.in/#/freesand/generalsandconsumption", "type": "OPEN" },
       { "title": "PMAY Housing Status", "url": "https://awaassoft.nic.in/netiay/Benificiary.aspx", "type": "TRACK" },
       { "title": "AP Land Value Search", "url": "https://registration.ap.gov.in/igrs/newPropertyvalue", "type": "TRACK" },
@@ -29,14 +25,15 @@
   {
     "section": "Staff Utilities & Portals",
     "links": [
-      { "title": "EHS Health Card Download", "url": "https://www.ehs.ap.gov.in/EHSAP/hcStatusAction.do?actionFlag=onload&theme=darkgreen", "type": "TRACK" },
+      { "title": "EHS Health Card Download", "url": "https://www.ehs.ap.gov.in/EHSAP/hcStatusAction.do?actionFlag=onload&theme=darkgreen", "type": "OPEN" },
       { "title": "Age Calculator Tool", "url": "https://www.calculator.net/age-calculator.html", "type": "OPEN" },
       { "title": "PDF Utility (Merge/Split/Compress)", "url": "https://www.ilovepdf.com/", "type": "OPEN" },
       { "title": "HRMS Portal Login", "url": "https://gramawardsachivalayam.ap.gov.in/GSWSLMS/Login", "type": "OPEN" },
       { "title": "NIDHI Portal", "url": "https://nidhi.apcfss.in/", "type": "OPEN" }
     ],
     "internal": [
-      { "title": "📋 Eligibility Matrix (Saturation Rules)", "activity": "com.revenueapp.VswsEligibilityActivity" }
+      { "title": "📋 Scheme Eligibility Check", "activity": "com.revenueapp.VswsSchemeActivity" },
+      { "title": "🏠 Household Mapping Check", "activity": "com.revenueapp.VswsHouseholdActivity" }
     ]
   }
 ]
