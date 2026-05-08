@@ -10,8 +10,8 @@
       { "title": "PGRS (Meekosam) Status", "url": "https://meekosam.ap.gov.in/ApplicationStatus.aspx", "type": "TRACK" }
     ],
     "internal": [
-      { "title": "📞 Government Helplines", "activity": "com.revenueapp.VswsHelplinesActivity" }
-       { "title": "📋 Scheme Eligibility Check", "activity": "com.revenueapp.VswsSchemeActivity" },
+      { "title": "📞 Government Helplines", "activity": "com.revenueapp.VswsHelplinesActivity" },
+      { "title": "📋 Scheme Eligibility Check", "activity": "com.revenueapp.VswsSchemeActivity" },
       { "title": "🏠 Household Mapping Check", "activity": "com.revenueapp.VswsHouseholdActivity" }
     ]
   },
