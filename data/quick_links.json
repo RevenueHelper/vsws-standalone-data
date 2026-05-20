@@ -2,6 +2,7 @@
   {
     "section": "Citizen Services",
     "links": [
+      { "title": "Housing Beneficiary Search.", "url": "https://housingforall2.ap.gov.in/GSVPortal/ApplicationSearch.aspx", "type": "TRACK" },
       { "title": "Rice Card Details (AePOS)", "url": "https://aepos.ap.gov.in/SRC_Trans_Int", "type": "TRACK" },
       { "title": "Free Sand Booking", "url": "https://sand.ap.gov.in/#/freesand/generalsandconsumption", "type": "OPEN" },
       { "title": "PMAY Housing Status", "url": "https://awaassoft.nic.in/netiay/Benificiary.aspx", "type": "TRACK" },
