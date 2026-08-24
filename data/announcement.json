@@ -1,6 +1,5 @@
 {
-  "show": true,
-  "imageUrl": "",
-  "text": "Welcome to mySGSW Helper!",
-  "clickUrl": "https://play.google.com/store/apps/details?id=com.revenueapp.vsws"
+  "text": "Have suggestions or requests? Tap here to send us an email!",
+  "clickUrl": "mailto:nissylabs@gmail.com?subject=Suggestions%20for%20mySGSW%20Helper",
+  "imageUrl": ""
 }
